@@ -23,11 +23,11 @@ Test Definition (JSON) → Test Generator (Node.js) → Cypress Execution
 
 ### Layers:
 ✅ Test Definition Layer<br>
-   JSON files define test steps and data
+*   JSON files define test steps and data
 ✅ Test Generator Layer<br>
-   Converts JSON into Cypress test scripts
+*   Converts JSON into Cypress test scripts
 ✅ Execution Layer<br>
-   Cypress runs generated tests
+*   Cypress runs generated tests
 
 ## Future Enhancements
 ✅ AI-based test case generation (Prompt → JSON)<br>
@@ -37,17 +37,19 @@ Test Definition (JSON) → Test Generator (Node.js) → Cypress Execution
 
 ## Running Tests
 ### Run the generator
+```
 node generator/generateTest.js login.json
 node generator/generateTest.js signup.json
-
+```
 ### Generated test will be created
+```
 cypress/e2e/generated/login.generated.cy.js
-
+```
 ### Run Cypress
+```
 npx cypress open
+```
 
-### Runs all Cypress tests in headless mode and generate Allure report
-npm run ui-regression-allure
 
 ## CI/CD
 The project uses GitHub Actions for continuous integration. The workflow configuration can be found in .github/workflows/cypress.yml
