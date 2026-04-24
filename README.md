@@ -16,7 +16,36 @@ This approach made my workflow faster, modular, and easier to maintain.
 ```
 cypress/e2e/generated
 ```
+## My Approach to AI-Assisted Testing ## 
+Instead of relying only on traditional scripting, I introduced a simple but effective AI-assisted workflow.
+I used Claude / Copilot in the browser (manual prompt + copy-paste approach) to convert test scenarios into structured JSON.
 
+### Prompt Engineering for Test Generation ###
+Here’s the exact prompt pattern I used to generate consistent test steps:
+```
+Convert this into JSON test steps for test generator.
+
+Only use these actions:
+visit, type, click, assertUrl, assertText
+
+Do not use:
+get, assertion, target
+
+Follow this exact format:
+{
+  "testName": "...",
+  "steps": [
+    { "action": "visit", "url": "..." },
+    { "action": "type", "selector": "...", "value": "..." },
+    { "action": "click", "selector": "..." },
+    { "action": "assertUrl", "value": "..." },
+    { "action": "assertText", "value": "..." }
+  ]
+}
+
+Scenario:
+<your test case>
+```
 ## How to Execute the Framework ## 
 To keep things simple and reproducible, I structured the execution into two steps:
 
@@ -36,7 +65,8 @@ npx cypress open
 ```
 
 ## Where AI Helped ## 
-* Using Copilot and Claude, I was able to:
+Using Copilot and Claude, I was able to:<br>
+* Use Claude / Copilot to convert it into JSON
 * Quickly design structured JSON test formats
 * Generate repetitive Cypress commands efficiently
 * Refactor test logic into reusable patterns
