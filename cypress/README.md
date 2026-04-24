@@ -22,17 +22,17 @@ This project contains automated tests for:<br>
 Test Definition (JSON) → Test Generator (Node.js) → Cypress Execution
 
 ### Layers:
-✅ Test Definition Layer
+✅ Test Definition Layer<br>
    JSON files define test steps and data
-✅ Test Generator Layer
+✅ Test Generator Layer<br>
    Converts JSON into Cypress test scripts
-✅ Execution Layer
+✅ Execution Layer<br>
    Cypress runs generated tests
 
 ## Future Enhancements
-✅ AI-based test case generation (Prompt → JSON)
-✅ Integration with CI/CD (Jenkins, GitHub Actions)
-✅ Advanced actions (API testing, validations)
+✅ AI-based test case generation (Prompt → JSON)<br>
+✅ Integration with CI/CD (Jenkins, GitHub Actions)<br>
+✅ Advanced actions (API testing, validations)<br>
 ✅ Test reporting dashboards
 
 ## Running Tests
