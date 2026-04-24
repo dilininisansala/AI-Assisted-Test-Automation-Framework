@@ -236,14 +236,19 @@ Always align JSON keys with what your generator expects.
 Example: use "suiteName" for describe() and "name" (or "testName") for it().
 
 💡<b>Strict Action Constraints</b> <br>
-Limit actions to: visit, type, click, assertUrl, assertText.
+Limit actions to: <br>
+🔹visit<br>
+🔹type<br>
+🔹click<br>
+🔹assertUrl<br> 
+🔹assertText<br>
 Avoid unsupported actions like get, assertion, or target to keep definitions clean and predictable.
 
 💡<b>Readable Suite Names</b> <br>
-Use descriptive suiteName values such as "Product Checkout Flows" or "Signup Functionality". This makes generated tests easier to organize and understand.
+Use descriptive suiteName values such as <b>"Product Checkout Flows"</b> or <b>"Signup Functionality"</b>. This makes generated tests easier to organize and understand.
 
 💡<b>Scenario‑Driven Test Names</b> <br>
-Each test should have a clear <b>"name"</b> (or <b>"testName"</b>) that describes the scenario:
+Each test should have a clear <b>"name"</b> (or <b>"testName"</b>) that describes the scenario:<br>
 🔹Empty Cart Checkout<br>
 🔹Single Product Checkout<br>
 🔹Product Search & Add to Cart
