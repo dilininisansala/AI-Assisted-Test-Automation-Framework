@@ -1,6 +1,5 @@
 # AI-Assisted-Test-Automation-Framework
-I explored how AI tools like Microsoft Copilot and Claude can accelerate the process. Instead of writing long Cypress scripts by hand, I experimented with AI‑assisted test generation — converting scenarios into JSON definitions and letting a generator script produce Cypress tests automatically.
-This approach made my workflow faster, modular, and easier to maintain.
+I explored how AI tools like <b>Microsoft Copilot</b> and <b>Claude</b> can accelerate the process. Instead of writing long Cypress scripts by hand, I experimented with AI‑assisted test generation - converting scenarios into <b>JSON definitions</b> and letting a generator script produce Cypress tests automatically. This approach made my workflow faster, modular, and easier to maintain.
 
 <b> Test Application Used: https://automationexercise.com/ </b> 
 
