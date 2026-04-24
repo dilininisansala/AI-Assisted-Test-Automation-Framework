@@ -204,6 +204,8 @@ cypress/e2e/generated/login.generated.cy.js
 ```
 <img width="1918" height="1017" alt="image" src="https://github.com/user-attachments/assets/ad1c76ae-73e7-4caf-94f8-b2aaab6615ea" />
 
+<b>NOTE:</b> The generator should use <b>suiteName</b>  for the <b>describe()</b>  block and <b>name</b> for the <b>it()</b> block.
+
 ## Why It Matters ## 
 ✅ Maintainability: JSON definitions are cleaner and easier to update than raw Cypress scripts.<br>
 ✅ Scalability: Each product flow can live in its own JSON file, or be combined into a suite.<br>
