@@ -10,7 +10,7 @@ I explored how AI tools like <b>Microsoft Copilot</b> and <b>Claude</b> can acce
 * Search & add to cart
 * Single product checkout
 * Multiple products checkout
-* Empty cart checkout.<br>
+* Empty cart checkout<br>
 
 ✅ Converted these scripts into JSON-based test definitions using strict, reusable actions <br>
 * visit
