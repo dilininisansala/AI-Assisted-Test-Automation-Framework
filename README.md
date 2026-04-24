@@ -10,6 +10,7 @@ This approach made my workflow faster, modular, and easier to maintain.
 * click
 * assertUrl
 * assertText<br>
+
 ✅ Built a generator script (generateTest.js) that parses JSON and outputs Cypress .cy.js files.<br>
 ✅ Generated modular test scripts inside<br>
 ```
