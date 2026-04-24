@@ -1,0 +1,17 @@
+{
+  "suiteName": "Product Checkout Flows",
+  "tests": [
+    {
+      "name": "Empty Cart Checkout",
+      "steps": [
+        { "action": "visit", "url": "/login" },
+        { "action": "click", "selector": "a[href='/login']" },
+        { "action": "type", "selector": "input[data-qa='login-email']", "value": "teena@gmail.com" },
+        { "action": "type", "selector": "input[placeholder='Password']", "value": "teena123" },
+        { "action": "click", "selector": "button[data-qa='login-button']" },
+        { "action": "visit", "url": "/view_cart" },
+        { "action": "assertText", "value": "Cart is empty! Click here to buy products." }
+      ]
+    }
+  ]
+}

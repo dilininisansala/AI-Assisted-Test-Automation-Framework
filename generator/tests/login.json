@@ -1,0 +1,29 @@
+{
+  "suiteName": "Login Functionality",
+  "tests": [
+    {
+      "name": "Login with valid credentials",
+      "dataKey": "validUser",
+      "steps": [
+        { "action": "visit", "value": "/" },
+        { "action": "clickText", "value": "Signup / Login" },
+        { "action": "type", "selector": "[data-qa='login-email']", "fixture": "email" },
+        { "action": "type", "selector": "[data-qa='login-password']", "fixture": "password" },
+        { "action": "click", "selector": "[data-qa='login-button']" },
+        { "action": "assertText", "value": "Logged in as" }
+      ]
+    },
+    {
+      "name": "Login with invalid credentials",
+      "dataKey": "invalidUser",
+      "steps": [
+        { "action": "visit", "value": "/" },
+        { "action": "clickText", "value": "Signup / Login" },
+        { "action": "type", "selector": "[data-qa='login-email']", "fixture": "email" },
+        { "action": "type", "selector": "[data-qa='login-password']", "fixture": "password" },
+        { "action": "click", "selector": "[data-qa='login-button']" },
+        { "action": "assertText", "value": "Your email or password is incorrect!" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "suiteName": "Signup Functionality",
+  "tests": [
+    {
+      "name": "Signup with valid data and verify Account Created",
+      "steps": [
+        { "action": "visit", "url": "/" },
+        { "action": "click", "selector": "Signup / Login" },
+        { "action": "type", "selector": "input[data-qa='signup-name']", "value": "Geralds" },
+        { "action": "type", "selector": "input[data-qa='signup-email']", "value": "geralds@example.com" },
+        { "action": "click", "selector": "button[data-qa='signup-button']" },
+        { "action": "type", "selector": "input[data-qa='password']", "value": "TestPassword123" },
+        { "action": "click", "selector": "#id_gender2" },
+        { "action": "click", "selector": "#days" },
+        { "action": "click", "selector": "#months" },
+        { "action": "click", "selector": "#years" },
+        { "action": "type", "selector": "input[data-qa='first_name']", "value": "Geralds" },
+        { "action": "type", "selector": "input[data-qa='last_name']", "value": "Smith" },
+        { "action": "type", "selector": "input[data-qa='company']", "value": "Test Company" },
+        { "action": "type", "selector": "input[data-qa='address']", "value": "123 Test Street" },
+        { "action": "click", "selector": "#country" },
+        { "action": "type", "selector": "input[data-qa='state']", "value": "Karnataka" },
+        { "action": "type", "selector": "input[data-qa='city']", "value": "Bangalore" },
+        { "action": "type", "selector": "input[data-qa='zipcode']", "value": "560001" },
+        { "action": "type", "selector": "input[data-qa='mobile_number']", "value": "9876543210" },
+        { "action": "click", "selector": "button[data-qa='create-account']" },
+        { "action": "assertUrl", "value": "https://automationexercise.com/account_created" },
+        { "action": "assertText", "value": "Account Created!" }
+      ]
+    }
+  ]
+}

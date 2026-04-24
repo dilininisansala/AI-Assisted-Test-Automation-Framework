@@ -1,0 +1,19 @@
+{
+  "suiteName": "Product Checkout Flows",
+  "tests": [
+    {
+      "name": "Product Search and Add to Cart",
+      "steps": [
+        { "action": "visit", "url": "/login" },
+        { "action": "type", "selector": "input[data-qa='login-email']", "value": "teena@gmail.com" },
+        { "action": "type", "selector": "input[placeholder='Password']", "value": "teena123" },
+        { "action": "click", "selector": "button[data-qa='login-button']" },
+        { "action": "click", "selector": "Products" },
+        { "action": "type", "selector": "#search_product", "value": "Dress" },
+        { "action": "click", "selector": "#submit_search" },
+        { "action": "click", "selector": ".product-overlay a[data-product-id]" },
+        { "action": "assertText", "value": "Added! Your product has been added to cart" }
+      ]
+    }
+  ]
+}

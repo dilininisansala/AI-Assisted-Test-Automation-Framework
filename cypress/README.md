@@ -1,0 +1,56 @@
+# AI-Assisted Test Automation Framework
+This project demonstrates a data-driven, AI-assisted test automation framework using Cypress.Instead of writing test scripts manually, test scenarios are defined in JSON format, and a custom test generator engine dynamically converts them into executable Cypress test scripts.
+
+This project contains automated tests for:
+✅ Signup Flow
+✅ Login Flow
+✅ Product Search & Add to Cart
+✅ Single Product Checkout (without payment)
+✅ Multiple Products Checkout (without payment)
+✅ Empty Cart Checkout
+✅ Dynamic Cart Operations
+
+## Key Features
+✅ JSON-based test case definition
+✅ Dynamic test generation using Node.js
+✅ Reusable and scalable test architecture
+✅ Separation of manual and generated tests
+✅ Supports multiple application flows (Login, Signup, Product, etc.)
+✅ Easily extendable for AI-based test generation
+
+## Architecture
+Test Definition (JSON) → Test Generator (Node.js) → Cypress Execution
+
+### Layers:
+✅ Test Definition Layer
+   JSON files define test steps and data
+✅ Test Generator Layer
+   Converts JSON into Cypress test scripts
+✅ Execution Layer
+   Cypress runs generated tests
+
+## Future Enhancements
+✅ AI-based test case generation (Prompt → JSON)
+✅ Integration with CI/CD (Jenkins, GitHub Actions)
+✅ Advanced actions (API testing, validations)
+✅ Test reporting dashboards
+
+## Running Tests
+### Run the generator
+node generator/generateTest.js login.json
+node generator/generateTest.js signup.json
+
+### Generated test will be created
+cypress/e2e/generated/login.generated.cy.js
+
+### Run Cypress
+npx cypress open
+
+### Runs all Cypress tests in headless mode and generate Allure report
+npm run ui-regression-allure
+
+## CI/CD
+The project uses GitHub Actions for continuous integration. The workflow configuration can be found in .github/workflows/cypress.yml
+
+## Conclusion
+This project demonstrates how AI-assisted testing can transform traditional automation into a scalable, intelligent, and maintainable system.

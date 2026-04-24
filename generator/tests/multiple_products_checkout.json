@@ -1,0 +1,35 @@
+{
+  "suiteName": "Product Checkout Flows",
+  "tests": [
+    {
+      "name": "Multiple Products Checkout",
+      "steps": [
+        { "action": "visit", "url": "/login" },
+        { "action": "type", "selector": "input[data-qa='login-email']", "value": "teena@gmail.com" },
+        { "action": "type", "selector": "input[placeholder='Password']", "value": "teena123" },
+        { "action": "click", "selector": "button[data-qa='login-button']" },
+        { "action": "click", "selector": "Products" },
+        { "action": "type", "selector": "#search_product", "value": "Dress" },
+        { "action": "click", "selector": "#submit_search" },
+        { "action": "click", "selector": ".product-overlay a[data-product-id]" },
+        { "action": "click", "selector": ".product-overlay a[data-product-id]" },
+        { "action": "click", "selector": ".product-overlay a[data-product-id]" },
+        { "action": "click", "selector": "#cartModal View Cart" },
+        { "action": "assertUrl", "value": "/view_cart" },
+        { "action": "click", "selector": ".btn.btn-default.check_out" },
+        { "action": "assertText", "value": "Review Your Order" },
+        { "action": "click", "selector": ".btn.btn-default.check_out" },
+        { "action": "assertText", "value": "Payment" },
+        { "action": "type", "selector": "input[name='name_on_card']", "value": "teena smith" },
+        { "action": "type", "selector": "input[name='card_number']", "value": "1234567890" },
+        { "action": "type", "selector": "input[placeholder='ex. 311']", "value": "123" },
+        { "action": "type", "selector": "input[placeholder='MM']", "value": "06" },
+        { "action": "type", "selector": "input[placeholder='YYYY']", "value": "2028" },
+        { "action": "click", "selector": "#submit" },
+        { "action": "assertText", "value": "Your order has been placed successfully!" },
+        { "action": "assertUrl", "value": "/payment_done" },
+        { "action": "assertText", "value": "Congratulations! Your order has been confirmed!" }
+      ]
+    }
+  ]
+}

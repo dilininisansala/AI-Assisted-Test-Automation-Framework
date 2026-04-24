@@ -1,0 +1,23 @@
+{
+  "validUser": {
+    "name": "Jason",
+    "email": "jason11@sharklasers.com",
+    "title": "Mr.",
+    "password": "Luc123&#",
+    "day": "10",
+    "month": "May",
+    "year": "1990",
+    "firstname": "Jason",
+    "lastname": "Smith",
+    "company": "Techno Pvt Ltd",
+    "address1": "123 Main Street",
+    "address2": "Apartment 45",
+    "country": "Canada",
+    "state": "Ontario",
+    "city": "Toronto",
+    "zipcode": "00011",
+    "mobile": "0123456789"
+  },
+
+  "duplicateEmail": "jason4@sharklasers.com"
+}
