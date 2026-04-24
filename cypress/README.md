@@ -19,7 +19,9 @@ This project contains automated tests for:<br>
 ✅ Easily extendable for AI-based test generation
 
 ## Architecture
+```
 Test Definition (JSON) → Test Generator (Node.js) → Cypress Execution
+```
 
 ### Layers:
 ✅ Test Definition Layer<br>
