@@ -231,3 +231,32 @@ describe('Product Checkout Flows', () => {
 ✅ Scalability: Each product flow can live in its own JSON file, or be combined into a suite.<br>
 ✅ CI/CD Friendly: Modular tests can run independently or in parallel.<br>
 ✅ AI Assistance: AI helped me design, debug, and structure these flows faster than manual trial‑and‑error.
+
+## 📌 Special Notes on JSON Test Definitions ##
+💡<b>Consistency in Keys</b> 
+Always align JSON keys with what your generator expects.
+Example: use "suiteName" for describe() and "name" (or "testName") for it().
+
+💡<b>Strict Action Constraints</b> 
+Limit actions to: visit, type, click, assertUrl, assertText.
+Avoid unsupported actions like get, assertion, or target to keep definitions clean and predictable.
+
+💡<b>Readable Suite Names</b> 
+Use descriptive suiteName values such as "Product Checkout Flows" or "Signup Functionality".
+
+This makes generated tests easier to organize and understand.
+
+💡<b>Scenario‑Driven Test Names</b> 
+Each test should have a clear <b>"name"</b> (or <b>"testName"</b>) that describes the scenario:
+🔹Empty Cart Checkout
+🔹Single Product Checkout
+🔹Product Search & Add to Cart
+
+💡<b>Fixture Integration</b> 
+You can reference test data via "fixture" keys (e.g., data.email, data.password) for reusable credentials.
+This keeps JSON definitions lightweight and avoids hardcoding sensitive values.
+
+💡<b>Modularity vs. Combined Suites</b> 
+🔹Separate JSON files per scenario = modular, CI/CD friendly.
+🔹Combined JSON suite = easier to see the big picture.
+
