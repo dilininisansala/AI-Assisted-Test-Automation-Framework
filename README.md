@@ -207,12 +207,22 @@ cypress/e2e/generated/login.generated.cy.js
 ### Generator Mapping Rule ### 
 The generator should use:
 * <b>suiteName</b>  for the <b>describe()</b>  block 
-* <b>name</b> for the <b>it()</b> block.
+* <b>name</b> for the <b>it()</b> block
   
 If this mapping isn’t correct, your generated file will show:
 ```
 it('undefined', () => {
   // ...
+});
+
+```
+This happens because the script is trying to read a property that doesn’t exist, such as test.test_title or test.testName when your JSON actually uses name
+Generated Cypress test:
+```
+describe('Product Checkout Flows', () => {
+  it('Product Search & Add to Cart', () => {
+    // steps...
+  });
 });
 
 ```
