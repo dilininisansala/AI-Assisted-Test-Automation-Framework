@@ -3,7 +3,13 @@ I explored how AI tools like Microsoft Copilot and Claude can accelerate the pro
 This approach made my workflow faster, modular, and easier to maintain.
 
 ## What I Did ## 
-✅ Started with Cypress scripts for product flows: signup, Login, search & add to cart, single product checkout, multiple products checkout, and empty cart checkout.<br>
+✅ Started with Cypress scripts for product flows:<br> 
+* Signup
+* Login,
+* Search & add to cart
+* Single product checkout
+* Multiple products checkout
+* empty cart checkout.<br>
 ✅ Converted these scripts into JSON-based test definitions using strict, reusable actions <br>
 * visit
 * type
