@@ -240,21 +240,18 @@ Limit actions to: visit, type, click, assertUrl, assertText.
 Avoid unsupported actions like get, assertion, or target to keep definitions clean and predictable.
 
 💡<b>Readable Suite Names</b> <br>
-Use descriptive suiteName values such as "Product Checkout Flows" or "Signup Functionality".
-
-This makes generated tests easier to organize and understand.
+Use descriptive suiteName values such as "Product Checkout Flows" or "Signup Functionality". This makes generated tests easier to organize and understand.
 
 💡<b>Scenario‑Driven Test Names</b> <br>
 Each test should have a clear <b>"name"</b> (or <b>"testName"</b>) that describes the scenario:
-🔹Empty Cart Checkout
-🔹Single Product Checkout
+🔹Empty Cart Checkout<br>
+🔹Single Product Checkout<br>
 🔹Product Search & Add to Cart
 
 💡<b>Fixture Integration</b> <br>
-You can reference test data via "fixture" keys (e.g., data.email, data.password) for reusable credentials.
-This keeps JSON definitions lightweight and avoids hardcoding sensitive values.
+You can reference test data via "fixture" keys (e.g., data.email, data.password) for reusable credentials. This keeps JSON definitions lightweight and avoids hardcoding sensitive values.
 
-💡<b>Modularity vs. Combined Suites</b> 
-🔹Separate JSON files per scenario = modular, CI/CD friendly.
+💡<b>Modularity vs. Combined Suites</b><br> 
+🔹Separate JSON files per scenario = modular, CI/CD friendly.<br>
 🔹Combined JSON suite = easier to see the big picture.
 
