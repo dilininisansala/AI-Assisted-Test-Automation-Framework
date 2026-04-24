@@ -24,8 +24,10 @@ Test Definition (JSON) → Test Generator (Node.js) → Cypress Execution
 ### Layers:
 ✅ Test Definition Layer<br>
 *   JSON files define test steps and data<br>
+
 ✅ Test Generator Layer<br>
 *   Converts JSON into Cypress test scripts<br>
+
 ✅ Execution Layer<br>
 *   Cypress runs generated tests
 
