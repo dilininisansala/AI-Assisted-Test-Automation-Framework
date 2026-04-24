@@ -1,21 +1,21 @@
 # AI-Assisted Test Automation Framework
 This project demonstrates a data-driven, AI-assisted test automation framework using Cypress.Instead of writing test scripts manually, test scenarios are defined in JSON format, and a custom test generator engine dynamically converts them into executable Cypress test scripts.
 
-This project contains automated tests for:
-✅ Signup Flow
-✅ Login Flow
-✅ Product Search & Add to Cart
-✅ Single Product Checkout (without payment)
-✅ Multiple Products Checkout (without payment)
-✅ Empty Cart Checkout
+This project contains automated tests for:<br>
+✅ Signup Flow<br>
+✅ Login Flow<br>
+✅ Product Search & Add to Cart<br>
+✅ Single Product Checkout (without payment)<br>
+✅ Multiple Products Checkout (without payment)<br>
+✅ Empty Cart Checkout<br>
 ✅ Dynamic Cart Operations
 
 ## Key Features
-✅ JSON-based test case definition
-✅ Dynamic test generation using Node.js
-✅ Reusable and scalable test architecture
-✅ Separation of manual and generated tests
-✅ Supports multiple application flows (Login, Signup, Product, etc.)
+✅ JSON-based test case definition<br>
+✅ Dynamic test generation using Node.js<br>
+✅ Reusable and scalable test architecture<br>
+✅ Separation of manual and generated tests<br>
+✅ Supports multiple application flows (Login, Signup, Product, etc.)<br>
 ✅ Easily extendable for AI-based test generation
 
 ## Architecture
