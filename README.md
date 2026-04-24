@@ -33,13 +33,18 @@ get, assertion, target
 
 Follow this exact format:
 {
-  "testName": "...",
-  "steps": [
-    { "action": "visit", "url": "..." },
-    { "action": "type", "selector": "...", "value": "..." },
-    { "action": "click", "selector": "..." },
-    { "action": "assertUrl", "value": "..." },
-    { "action": "assertText", "value": "..." }
+  "suiteName": "...",
+  "tests": [
+    {
+      "name": "...",
+      "steps": [
+        { "action": "visit", "url": "..." },
+        { "action": "type", "selector": "...", "value": "..." },
+        { "action": "click", "selector": "..." },
+        { "action": "assertUrl", "value": "..." },
+        { "action": "assertText", "value": "..." }
+      ]
+    }
   ]
 }
 
