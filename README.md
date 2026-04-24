@@ -223,9 +223,7 @@ describe('Product Checkout Flows', () => {
     // steps...
   });
 });
-
 ```
-
 ## Why It Matters ## 
 ✅ Maintainability: JSON definitions are cleaner and easier to update than raw Cypress scripts.<br>
 ✅ Scalability: Each product flow can live in its own JSON file, or be combined into a suite.<br>
@@ -233,26 +231,26 @@ describe('Product Checkout Flows', () => {
 ✅ AI Assistance: AI helped me design, debug, and structure these flows faster than manual trial‑and‑error.
 
 ## 📌 Special Notes on JSON Test Definitions ##
-💡<b>Consistency in Keys</b> 
+💡<b>Consistency in Keys</b><br> 
 Always align JSON keys with what your generator expects.
 Example: use "suiteName" for describe() and "name" (or "testName") for it().
 
-💡<b>Strict Action Constraints</b> 
+💡<b>Strict Action Constraints</b> <br>
 Limit actions to: visit, type, click, assertUrl, assertText.
 Avoid unsupported actions like get, assertion, or target to keep definitions clean and predictable.
 
-💡<b>Readable Suite Names</b> 
+💡<b>Readable Suite Names</b> <br>
 Use descriptive suiteName values such as "Product Checkout Flows" or "Signup Functionality".
 
 This makes generated tests easier to organize and understand.
 
-💡<b>Scenario‑Driven Test Names</b> 
+💡<b>Scenario‑Driven Test Names</b> <br>
 Each test should have a clear <b>"name"</b> (or <b>"testName"</b>) that describes the scenario:
 🔹Empty Cart Checkout
 🔹Single Product Checkout
 🔹Product Search & Add to Cart
 
-💡<b>Fixture Integration</b> 
+💡<b>Fixture Integration</b> <br>
 You can reference test data via "fixture" keys (e.g., data.email, data.password) for reusable credentials.
 This keeps JSON definitions lightweight and avoids hardcoding sensitive values.
 
