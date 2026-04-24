@@ -233,7 +233,7 @@ describe('Product Checkout Flows', () => {
 ## 📌 Special Notes on JSON Test Definitions ##
 💡<b>Consistency in Keys</b><br> 
 Always align JSON keys with what your generator expects.
-Example: use "suiteName" for describe() and "name" (or "testName") for it().
+Example: use <b>"suiteName"</b> for <b>describe()</b> and <b>"name"</b> (or <b>"testName"</b>) for <b>it()</b>
 
 💡<b>Strict Action Constraints</b> <br>
 Limit actions to: <br>
@@ -254,7 +254,7 @@ Each test should have a clear <b>"name"</b> (or <b>"testName"</b>) that describe
 🔹Product Search & Add to Cart
 
 💡<b>Fixture Integration</b> <br>
-You can reference test data via "fixture" keys (e.g., data.email, data.password) for reusable credentials. This keeps JSON definitions lightweight and avoids hardcoding sensitive values.
+You can reference test data via <b>"fixture"</b> keys (e.g., data.email, data.password) for reusable credentials. This keeps JSON definitions lightweight and avoids hardcoding sensitive values.
 
 💡<b>Modularity vs. Combined Suites</b><br> 
 🔹Separate JSON files per scenario = modular, CI/CD friendly.<br>
