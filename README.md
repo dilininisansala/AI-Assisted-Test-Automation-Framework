@@ -249,9 +249,10 @@ Use descriptive suiteName values such as <b>"Product Checkout Flows"</b> or <b>"
 
 💡<b>Scenario‑Driven Test Names</b> <br>
 Each test should have a clear <b>"name"</b> (or <b>"testName"</b>) that describes the scenario:<br>
-🔹Empty Cart Checkout<br>
-🔹Single Product Checkout<br>
-🔹Product Search & Add to Cart
+<b>Example</b>
+* Empty Cart Checkout<br>
+* Single Product Checkout<br>
+* Product Search & Add to Cart
 
 💡<b>Fixture Integration</b> <br>
 You can reference test data via <b>"fixture"</b> keys (e.g., data.email, data.password) for reusable credentials. This keeps JSON definitions lightweight and avoids hardcoding sensitive values.
