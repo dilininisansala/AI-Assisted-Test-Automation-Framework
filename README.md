@@ -249,7 +249,7 @@ Use descriptive suiteName values such as <b>"Product Checkout Flows"</b> or <b>"
 
 💡<b>Scenario‑Driven Test Names</b> <br>
 Each test should have a clear <b>"name"</b> (or <b>"testName"</b>) that describes the scenario:<br>
-<b>Example</b>
+<b>Example:</b>
 * Empty Cart Checkout<br>
 * Single Product Checkout<br>
 * Product Search & Add to Cart
