@@ -5,11 +5,12 @@ This approach made my workflow faster, modular, and easier to maintain.
 ## What I Did ## 
 ✅ Started with Cypress scripts for product flows:<br> 
 * Signup
-* Login,
+* Login
 * Search & add to cart
 * Single product checkout
 * Multiple products checkout
 * empty cart checkout.<br>
+
 ✅ Converted these scripts into JSON-based test definitions using strict, reusable actions <br>
 * visit
 * type
