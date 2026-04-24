@@ -9,7 +9,7 @@ This approach made my workflow faster, modular, and easier to maintain.
 * Search & add to cart
 * Single product checkout
 * Multiple products checkout
-* empty cart checkout.<br>
+* Empty cart checkout.<br>
 
 ✅ Converted these scripts into JSON-based test definitions using strict, reusable actions <br>
 * visit
