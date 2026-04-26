@@ -224,6 +224,38 @@ describe('Product Checkout Flows', () => {
   });
 });
 ```
+
+## CI/CD Integration ## 
+```
+name: Cypress Generated Tests
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      # Step 2: Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: npm ci
+
+      # Step 4: Run Cypress tests (only generated folder)
+      - name: Run Cypress tests (generated)
+        run: npx cypress run --spec "cypress/e2e/generated/*.cy.js"
+```
 ## Why It Matters ## 
 ✅ Maintainability: JSON definitions are cleaner and easier to update than raw Cypress scripts.<br>
 ✅ Scalability: Each product flow can live in its own JSON file, or be combined into a suite.<br>
